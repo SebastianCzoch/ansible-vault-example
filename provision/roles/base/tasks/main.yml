@@ -1,0 +1,8 @@
+---
+- name: include secrects
+  include_vars: secrects/group_vars/all
+
+- name: Put secrects to file
+  template:
+    src: sercret.yml.j2
+    dest: /tmp/sercret.yml
